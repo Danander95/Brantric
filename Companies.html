@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse Companies - Brantric</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="companies.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">
+  <div class="logo-icon">B</div>
+  <span>Brantric</span>
+</div>
+
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="companies.html">Companies</a>
+      <a href="#">About</a>
+      <a href="login.html" class="login-btn">Log in</a>
+    </nav>
+  </header>
+
+  <main class="browse-companies">
+    <h1>Browse Companies</h1>
+    <div class="search-bar">
+      <input type="text" placeholder="Search companies">
+    </div>
+
+    <div class="companies-grid">
+      <div class="company-card">
+        <h3>Vortex</h3>
+        <p>A platform for data analytics and visualization</p>
+      </div>
+      <div class="company-card">
+        <h3>Nexia</h3>
+        <p>Sustainable packaging solutions for e-commerce</p>
+      </div>
+      <div class="company-card">
+        <h3>Cognida</h3>
+        <p>AI-powered insights for the healthcare industry</p>
+      </div>
+      <div class="company-card">
+        <h3>Zenware</h3>
+        <p>Inventory management system for retailers</p>
+      </div>
+      <div class="company-card">
+        <h3>Fabrikat</h3>
+        <p>Custom manufacturing on demand</p>
+      </div>
+      <div class="company-card">
+        <h3>Optimo</h3>
+        <p>Customer support automation platform</p>
+      </div>
+      <div class="company-card">
+        <h3>Solunus</h3>
+        <p>Cloud-based CRM for small businesses</p>
+      </div>
+      <div class="company-card">
+        <h3>Fintex</h3>
+        <p>Digital payment solutions provider</p>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+
+</body>
+
+</html>
+
+

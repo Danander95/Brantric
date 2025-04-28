@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brantric - Discover Startups</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="font-family: 'Quicksand', sans-serif;">
+  <header class="navbar">
+    <div class="logo">B <span>Brantric</span></div>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="nav-links">
+      <a href="#" style="font-weight: 600;">Home</a>
+      <a href="Companies.html" style="font-weight: 600;">Companies</a>
+      <a href="#" style="font-weight: 600;">About</a>
+      <a href="login.html" class="login-btn">Log in</a>
+    </nav>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <h1>Discover new startups and companies</h1>
+    <p>Explore a curated selection of innovative new companies.<br>
+      Learn more about their business models, funding, and more.</p>
+    <a href="#" class="browse-btn">Browse Companies</a>
+  </main>
+
+  <section class="latest-companies">
+    <h2>Latest Companies</h2>
+    <div class="companies-grid">
+      <a href="#" class="company-card">
+        <h3>Vortex</h3>
+        <p>A platform for data analytics and visualization</p>
+      </a>
+      <a href="#" class="company-card">
+        <h3>Nexia</h3>
+        <p>Sustainable packaging solutions for e-commerce</p>
+      </a>
+      <a href="#" class="company-card">
+        <h3>Cognida</h3>
+        <p>AI-powered insights for the healthcare industry</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="additional-companies">
+    <h2>More Companies</h2>
+    <div class="additional-grid">
+      <a href="#" class="additional-card">
+        <h3>Quantify</h3>
+        <p>Revolutionizing digital finance with decentralized apps.</p>
+      </a>
+      <a href="#" class="additional-card">
+        <h3>Greenify</h3>
+        <p>Eco-friendly energy solutions for urban homes.</p>
+      </a>
+      <a href="#" class="additional-card">
+        <h3>Skybound</h3>
+        <p>Next-gen drone logistics and delivery services.</p>
+      </a>
+    </div>
+  </section>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+
+</body>
+
+</html>

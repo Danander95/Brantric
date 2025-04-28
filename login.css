@@ -1,0 +1,217 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+/* Full page settings */
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: url('data:image/jpeg;base64,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') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  padding: 1rem 2rem;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: gray
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 1.1rem;
+  position: relative;
+}
+
+.nav-links a:hover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #5b2d90;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.login-btn-nav {
+  background-color: #5b2d90;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-btn-nav:hover {
+  background-color: #431f6d;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+}
+
+/* Login Form */
+.login-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.login-card {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  margin-top: 80px;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #5b2d90;
+  margin-bottom: 1rem;
+}
+
+.logo span {
+  color: #333;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+.signup-text {
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.signup-text a {
+  color: #5b2d90;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+form {
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+input[type="email"],
+input[type="password"],
+.password-field input[type="text"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.password-field {
+  position: relative;
+}
+
+.password-field input {
+  padding-right: .75rem;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 1rem;
+  background-color: #5b2d90;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #431f6d;
+}
+
+.forgot-password {
+  margin-top: 1.5rem;
+}
+
+.forgot-password a {
+  color: #5b2d90;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 2rem;
+    background: white;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+  .nav-links.active {
+    display: flex;
+  }
+}

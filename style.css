@@ -1,0 +1,241 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f8f7;
+    color: #333;
+    line-height: 1.6;
+    font-size: 1.1rem;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    background-color: gray
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #5b2d90;
+  }
+  
+  .logo span {
+    color: black;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links a, .login-btn {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .login-btn {
+    background: transparent;
+    border: 1px solid #5b2d90;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .login-btn:hover {
+    background-color: #5b2d90;
+    color: white;
+  }
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #333;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  
+  .hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    color: #555;
+  }
+  
+  .browse-btn {
+    display: inline-block;
+    background-color: #5b2d90;
+    color: white;
+    padding: 1.2rem 2.4rem;
+    font-size: 1.4rem;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .browse-btn:hover {
+    background-color: #431f6d;
+  }
+  
+  .latest-companies {
+    padding: 4rem 2rem;
+  }
+  
+  .latest-companies h2 {
+    text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .companies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .company-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .company-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .company-card h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #5b2d90;
+  }
+  
+  .company-card p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .additional-companies {
+    padding: 4rem 2rem;
+  }
+  
+  .additional-companies h2 {
+    text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .additional-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .additional-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .additional-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .additional-card h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #5b2d90;
+  }
+  
+  .additional-card p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.3rem;
+    }
+    .browse-btn {
+      font-size: 1.2rem;
+      padding: 1rem 2rem;
+    }
+    .company-card h3,
+    .additional-card h3 {
+      font-size: 1.8rem;
+    }
+    .hamburger {
+      display: flex;
+    }
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: white;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      width: 200px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .nav-links.active {
+      display: flex;
+    }
+    .nav-links a, .login-btn {
+      margin: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar {
+      flex-direction: row;
+      align-items: center;
+    }
+    .hero h1 {
+      font-size: 1.8rem;
+    }
+    .browse-btn {
+      width: 100%;
+    }
+  }
+  

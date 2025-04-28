@@ -1,0 +1,190 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  padding: 1rem 2rem;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  background-color: gray
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 1.1rem;
+  position: relative;
+}
+
+.nav-links a:hover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #5b2d90;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.login-btn {
+  background-color: white;
+  color: #5b2d90;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid #5b2d90;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #5b2d90;
+  color: white;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+}
+
+/* Browse Companies */
+.browse-companies {
+  padding: 5rem 2rem 2rem 2rem;
+  text-align: center;
+}
+
+.browse-companies h1 {
+  font-size: 2.5rem;
+  color: #5b2d90; /* was #333 before */
+  margin-bottom: 2rem;
+}
+
+.search-bar {
+  margin-bottom: 3rem;
+}
+
+.search-bar input {
+  width: 100%;
+  max-width: 500px;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+
+.companies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* make wider min width */
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto; /* center the grid */
+  padding: 0 2rem; }
+
+
+.company-card {
+  background: white;
+  padding: 2rem; /* bigger padding */
+  min-height: 180px; /* taller cards */
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.company-card:hover {
+  transform: translateY(-5px);
+  background-color: #f4e9fc;
+  box-shadow: 0 6px 20px rgba(91, 45, 144, 0.2); /* purple glow shadow */
+}
+
+.company-card h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.6rem; /* larger company name */
+  color: purple;
+}
+
+.company-card p {
+  margin: 0;
+  font-size: 1.1rem; /* slightly larger description */
+  color: #666;
+}
+  
+ 
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    right: 2rem;
+    top: 70px;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  
+  
+ /* Branding Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-icon {
+  background-color: #5b2d90;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.logo span {
+  color: #333;
+  font-weight: 700;
+  font-size: 2rem;
+}
